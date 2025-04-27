@@ -1,7 +1,8 @@
 import Footer from "@/components/layouts/Footer";
 import Header from "@/components/layouts/Header";
 import {perksBenefitsData, teamData} from "@/lib/utils";
-import {ArrowRightIcon, FireIcon} from "@heroicons/react/24/outline";
+import {ArrowRightIcon, BuildingOfficeIcon, FireIcon, UserGroupIcon} from "@heroicons/react/24/outline";
+import { MapPin } from "lucide-react";
 import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
 
 function NomadPage() {
