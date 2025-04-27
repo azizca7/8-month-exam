@@ -7,10 +7,9 @@ import Header from "@/components/layouts/Header";
 import {Button} from "@/components/ui/button";
 import {ArrowRightIcon} from "@heroicons/react/24/outline";
 import {MagnifyingGlassIcon, MapPinIcon} from "@heroicons/react/24/outline";
-import {useQuery, useQueryClient} from "@tanstack/react-query";
+import {useQuery} from "@tanstack/react-query";
 
 function Home() {
-  const queryClient = useQueryClient();
   const {data, isLoading} = useQuery({
     queryKey: ["jobsCategory"],
     queryFn: () =>

@@ -1,5 +1,4 @@
 import {ArrowRightIcon} from "lucide-react";
-import React from "react";
 
 function CategoryCard({props}: {props: any}) {
   return (
