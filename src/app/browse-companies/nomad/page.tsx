@@ -185,7 +185,7 @@ function NomadPage() {
                   width={40}
                   height={30}
                   className="bg-red-500"
-                  src="./bg.png"
+                  src="./flag/1.png"
                   alt=""
                 />
                 <p className="text-[#000000] font-semibold text-base">
@@ -197,7 +197,7 @@ function NomadPage() {
                   width={40}
                   height={30}
                   className="bg-red-500"
-                  src="./bg.png"
+                  src="./flag/2.png"
                   alt=""
                 />
                 <p className="text-[#000000] font-semibold text-base">
@@ -209,7 +209,7 @@ function NomadPage() {
                   width={40}
                   height={30}
                   className="bg-red-500"
-                  src="./bg.png"
+                  src="./flag/3.png"
                   alt=""
                 />
                 <p className="text-[#000000] font-semibold text-base">
@@ -221,7 +221,7 @@ function NomadPage() {
                   width={40}
                   height={30}
                   className="bg-red-500"
-                  src="./bg.png"
+                  src="./flag/4.png"
                   alt=""
                 />
                 <p className="text-[#000000] font-semibold text-base">
@@ -249,7 +249,7 @@ function NomadPage() {
                 width={80}
                 height={80}
                 className="bg-red-500 rounded-full"
-                src="./bg.png"
+                src="./team/1.png"
                 alt=""
               />
               <p className="text-[#25324B] font-semibold text-[18px] mt-4">
@@ -268,7 +268,7 @@ function NomadPage() {
                 width={80}
                 height={80}
                 className="bg-red-500 rounded-full"
-                src="./bg.png"
+                src="./team/3.png"
                 alt=""
               />
               <p className="text-[#25324B] font-semibold text-[18px] mt-4">
@@ -287,7 +287,7 @@ function NomadPage() {
                 width={80}
                 height={80}
                 className="bg-red-500 rounded-full"
-                src="./bg.png"
+                src="./team/4.png"
                 alt=""
               />
               <p className="text-[#25324B] font-semibold text-[18px] mt-4">
@@ -306,7 +306,7 @@ function NomadPage() {
                 width={80}
                 height={80}
                 className="bg-red-500 rounded-full"
-                src="./bg.png"
+                src="./team/5.png"
                 alt=""
               />
               <p className="text-[#25324B] font-semibold text-[18px] mt-4">
@@ -325,7 +325,7 @@ function NomadPage() {
                 width={80}
                 height={80}
                 className="bg-red-500 rounded-full"
-                src="./bg.png"
+                src="./team/6.png"
                 alt=""
               />
               <p className="text-[#25324B] font-semibold text-[18px] mt-4">
