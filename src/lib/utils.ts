@@ -135,3 +135,36 @@ export const allJobsData = [
     img: "./jobs/7.png",
   },
 ];
+
+export const recommendedCompaniesData = [
+  {
+    title: "Nomad",
+    desc: "Nomad is located in Paris, France. Nomad has generates $728,000 in sales (USD).",
+    img: "./rCompanies/1.png",
+  },
+  {
+    title: "Discord",
+    desc: "We'd love to work with someone like you. We care about creating a delightful experience.",
+    img: "./rCompanies/2.png",
+  },
+  {
+    title: "Maze",
+    desc: "We're a passionate bunch working from all over the world to build the future of rapid testing together.",
+    img: "./rCompanies/3.png",
+  },
+  {
+    title: "Udacity",
+    desc: "Udacity is a new type of online university that teaches the actual programming skills.",
+    img: "./rCompanies/4.png",
+  },
+  {
+    title: "Webflow",
+    desc: "Webflow is the first design and hosting platform built from the ground up for the mobile age.",
+    img: "./rCompanies/5.png",
+  },
+  {
+    title: "Foundation",
+    desc: "Foundation helps creators mint and auction their digital artworks as NFTs on the Ethereum blockchain.",
+    img: "./rCompanies/6.png",
+  },
+];
