@@ -19,6 +19,7 @@ import Footer from "@/components/layouts/Footer";
 import {useQuery} from "@tanstack/react-query";
 import {Spinner} from "@/components/ui/loading";
 import Link from "next/link";
+import { allJobsData } from "@/lib/utils";
 
 export default function FindJobsPage() {
   const [showEmployment, setShowEmployment] = useState(true);
@@ -194,19 +195,19 @@ export default function FindJobsPage() {
                 </div>
               </div>
               <div className="grid gap-y-4">
-                {[1, 2, 3, 4, 5].map((_, index) => (
+                {allJobsData.map((item) => (
                   <div
-                    key={index}
+                    key={item.title}
                     className="border border-[#D6DDEB] p-6 flex justify-between"
                   >
                     <div className="flex items-start gap-x-6">
-                      <img src="./cardImage.png" alt="" />
+                      <img src={item.img} alt="" />
                       <div>
                         <p className="text-[#25324B] font-semibold text-[20px] leading-[120%]">
-                          Social Media Assistant
+                          {item.title}
                         </p>
                         <p className="text-[#7C8493] text-base leading-[160%] mt-2">
-                          Nomad Paris, France
+                          {item.location}
                         </p>
                         <div className="flex gap-x-2 mt-2">
                           <Badge className="bg-[#56CDAD1A] cursor-pointer hover:opacity-70 text-[#56CDAD] rounded-[80px] py-1.5 px-2.5 text-[14px] font-semibold">

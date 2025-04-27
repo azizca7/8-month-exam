@@ -97,3 +97,41 @@ export const techStackData = [
     title: "Framer",
   },
 ];
+
+export const allJobsData = [
+  {
+    title: "Social Media Assistant",
+    location: "Nomad - Paris, France",
+    img: "./jobs/1.png",
+  },
+  {
+    title: "Brand Designer",
+    location: "Dropbox - San Fransisco, USA",
+    img: "./jobs/2.png",
+  },
+  {
+    title: "Interactive Developer",
+    location: "Terraform - Hamburg, Germany",
+    img: "./jobs/3.png",
+  },
+  {
+    title: "Email Marketing",
+    location: "Revolut - Madrid, Spain",
+    img: "./jobs/4.png",
+  },
+  {
+    title: "Lead Engineer",
+    location: "Canva - Ankara, Turkey",
+    img: "./jobs/5.png",
+  },
+  {
+    title: "Product Designer",
+    location: "ClassPass - Berlin, Germany",
+    img: "./jobs/6.png",
+  },
+  {
+    title: "Customer Manager",
+    location: "Pitch - Berlin, Germany",
+    img: "./jobs/7.png",
+  },
+];

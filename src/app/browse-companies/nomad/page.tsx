@@ -164,7 +164,6 @@ function NomadPage() {
                   <img
                     width={40}
                     height={30}
-                    className="bg-red-500"
                     src={`./flag/${flag}.png`}
                     alt=""
                   />
