@@ -43,7 +43,7 @@ export function SignUpForm({className, ...props}: React.ComponentProps<"form">) 
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
         alert("Successfully registered!");
-        router.push("/"); // Ro'yxatdan o'tgandan keyin `/` sahifaga yo'naltiramiz
+        router.push("/"); 
       } else {
         alert(data?.message || "Something went wrong");
       }
@@ -62,7 +62,7 @@ export function SignUpForm({className, ...props}: React.ComponentProps<"form">) 
       {...props}
     >
       <div className="flex flex-col items-center gap-2 text-center">
-        <h1 className="text-2xl font-bold">Get more opportunities</h1>
+        <h1 className="text-2xl font-bold">Welcome Back, Dude</h1>
         <button
           type="button"
           className="border flex items-center justify-center gap-x-2.5 border-[#CCCCF5] mt-6 w-[408px] bg-white text-[#4640DE] font-bold text-base py-3"
