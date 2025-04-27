@@ -19,9 +19,14 @@ import Footer from "@/components/layouts/Footer";
 import {useQuery} from "@tanstack/react-query";
 import {Spinner} from "@/components/ui/loading";
 import Link from "next/link";
-import { allJobsData } from "@/lib/utils";
+import {allJobsData} from "@/lib/utils";
 
 export default function FindJobsPage() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredJobs, setFilteredJobs] = useState(allJobsData);
+ 
+  
+
   const [showEmployment, setShowEmployment] = useState(true);
 
   const employmentTypes = [
@@ -72,6 +77,15 @@ export default function FindJobsPage() {
                   type="text"
                   placeholder="Job title or keyword"
                   className="w-full py-2 outline-none text-sm text-gray-700 bg-transparent"
+                  value={searchTerm}
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    setSearchTerm(value);
+                    const filtered = allJobsData.filter((job) =>
+                      job.title.toLowerCase().includes(value.toLowerCase())
+                    );
+                    setFilteredJobs(filtered);
+                  }}
                 />
               </div>
 
@@ -195,7 +209,7 @@ export default function FindJobsPage() {
                 </div>
               </div>
               <div className="grid gap-y-4">
-                {allJobsData.map((item) => (
+                {filteredJobs.map((item) => (
                   <div
                     key={item.title}
                     className="border border-[#D6DDEB] p-6 flex justify-between"
