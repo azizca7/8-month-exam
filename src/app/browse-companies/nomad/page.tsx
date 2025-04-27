@@ -139,7 +139,7 @@ function NomadPage() {
             </p>
             <div className="grid mt-7 grid-cols-3 gap-2.5">
               {techStackData.map((item) => (
-                <div className="grid justify-items-center">
+                <div key={item.img} className="grid justify-items-center">
                   <img width={74} height={74} src={item.img} alt="" />
                   <p className="text-[#25324B] font-normal text-base mt-2.5">
                     {item.title}
