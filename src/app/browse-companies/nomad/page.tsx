@@ -117,35 +117,11 @@ function NomadPage() {
               </button>
             </div>
             <div className="flex gap-3 mt-10">
-              <img
-                width={478}
-                height={606}
-                className="bg-red-400"
-                src="./bg.png"
-                alt=""
-              />
+              <img width={478} height={606} src="./grid/1.png" alt="" />
               <div className="grid gap-3">
-                <img
-                  width={262}
-                  height={194}
-                  className="bg-red-700"
-                  src="./bg.png"
-                  alt=""
-                />{" "}
-                <img
-                  width={262}
-                  height={194}
-                  className="bg-red-700"
-                  src="./bg.png"
-                  alt=""
-                />{" "}
-                <img
-                  width={262}
-                  height={194}
-                  className="bg-red-700"
-                  src="./bg.png"
-                  alt=""
-                />
+                <img width={262} height={194} src="./grid/2.png" alt="" />{" "}
+                <img width={262} height={194} src="./grid/3.png" alt="" />{" "}
+                <img width={262} height={194} src="./grid/4.png" alt="" />
               </div>
             </div>
           </div>

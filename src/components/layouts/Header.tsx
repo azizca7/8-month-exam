@@ -1,7 +1,11 @@
+"use client";
 import Link from "next/link";
+import {usePathname} from "next/navigation";
 import {Button} from "../ui/button";
 
 function Header() {
+  const pathname = usePathname();
+
   return (
     <header className="flex justify-between items-center my-[21px]">
       <div className="flex gap-x-12 items-center">
@@ -12,8 +16,24 @@ function Header() {
           </Link>
         </div>
         <div className="flex items-center gap-x-4 font-medium text-base text-[#515B6F]">
-          <Link href="/find-jobs">Find Jobs</Link>
-          <Link href="/browse-companies">Browse Companies</Link>
+          <Link
+            className={`${
+              pathname === "/find-jobs" ? "border-b border-[#4640DE]" : ""
+            }`}
+            href="/find-jobs"
+          >
+            Find Jobs
+          </Link>
+          <Link
+            className={`${
+              pathname === "/browse-companies"
+                ? "border-b border-[#4640DE]"
+                : ""
+            }`}
+            href="/browse-companies"
+          >
+            Browse Companies
+          </Link>
         </div>
       </div>
       <div className="flex items-center gap-x-4">

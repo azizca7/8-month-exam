@@ -16,7 +16,7 @@ function CompaniesCard() {
         Nomad is located in Paris, France. Nomad has generates $728,000 in sales
         (USD).
       </p>
-      <Badge className="text-[#FFB836] mt-4 font-normal text-[14px] leading-[160%] p-1.5 px-2.5 border border-[#FFB836] bg-white rounded-[80px]">
+      <Badge className="text-[#FFB836] cursor-pointer hover:opacity-70 mt-4 font-normal text-[14px] leading-[160%] p-1.5 px-2.5 border border-[#FFB836] bg-white rounded-[80px]">
         Business Service
       </Badge>
     </div>

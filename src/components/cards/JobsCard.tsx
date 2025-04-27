@@ -22,10 +22,10 @@ function JobsCard(props: ThisProps) {
           {props.description}
         </p>
         <div className="flex gap-x-2 mt-4">
-          <Badge className="bg-[#EB85331A] text-[#FFB836] rounded-[80px] py-1.5 px-2.5 text-[14px] font-semibold">
+          <Badge className="bg-[#EB85331A] cursor-pointer hover:opacity-70 text-[#FFB836] rounded-[80px] py-1.5 px-2.5 text-[14px] font-semibold">
             Marketing
           </Badge>
-          <Badge className="bg-[#56CDAD1A] text-[#56CDAD] rounded-[80px] py-1.5 px-2.5 text-[14px] font-semibold">
+          <Badge className="bg-[#56CDAD1A] cursor-pointer hover:opacity-70 text-[#56CDAD] rounded-[80px] py-1.5 px-2.5 text-[14px] font-semibold">
             Design
           </Badge>
         </div>

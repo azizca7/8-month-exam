@@ -17,14 +17,14 @@ function LatestJobsCard(props: ThisProps) {
         </p>
         <p className="text-[#515B6F] font-normal text-base">{props.location}</p>
         <div className="flex gap-x-2 mt-2">
-          <Badge className="bg-[#56CDAD1A] text-[#56CDAD] rounded-[80px] py-1.5 px-2.5 text-[14px] font-semibold">
+          <Badge className="bg-[#56CDAD1A] cursor-pointer hover:opacity-70 text-[#56CDAD] rounded-[80px] py-1.5 px-2.5 text-[14px] font-semibold">
             Full-Time
           </Badge>
           <div className="border-l-[2px] border-[#D6DDEB] h-8"></div>
-          <Badge className="border-[#FFB836] text-[#FFB836] rounded-[80px] bg-white py-1.5 px-2.5 text-[14px] font-semibold">
+          <Badge className="border-[#FFB836] cursor-pointer hover:opacity-70 text-[#FFB836] rounded-[80px] bg-white py-1.5 px-2.5 text-[14px] font-semibold">
             Marketing
           </Badge>
-          <Badge className="border-[#4640DE] text-[#4640DE] rounded-[80px] bg-white py-1.5 px-2.5 text-[14px] font-semibold">
+          <Badge className="border-[#4640DE] cursor-pointer hover:opacity-70 text-[#4640DE] rounded-[80px] bg-white py-1.5 px-2.5 text-[14px] font-semibold">
             Full-Time
           </Badge>
         </div>
