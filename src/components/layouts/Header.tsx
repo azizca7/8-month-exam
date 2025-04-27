@@ -17,13 +17,20 @@ function Header() {
         </div>
       </div>
       <div className="flex items-center gap-x-4">
-        <Button className="text-[#4640DE] font-bold text-base" variant="ghost">
-          Login
-        </Button>
+        <Link href="/login">
+          <Button
+            className="text-[#4640DE] font-bold text-base"
+            variant="ghost"
+          >
+            Login
+          </Button>
+        </Link>
         <div className="border-l-[2px] border-[#D6DDEB] h-12"></div>
-        <Button className="bg-[#4640DE] font-bold text-base rounded-none">
-          Sign Up
-        </Button>
+        <Link href="/sign-up">
+          <Button className="bg-[#4640DE] font-bold text-base rounded-none">
+            Sign Up
+          </Button>
+        </Link>
       </div>
     </header>
   );

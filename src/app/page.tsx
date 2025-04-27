@@ -5,6 +5,7 @@ import LatestJobsCard from "@/components/cards/LatestJobsCard";
 import Footer from "@/components/layouts/Footer";
 import Header from "@/components/layouts/Header";
 import {Button} from "@/components/ui/button";
+import {Spinner} from "@/components/ui/loading";
 import {ArrowRightIcon} from "@heroicons/react/24/outline";
 import {MagnifyingGlassIcon, MapPinIcon} from "@heroicons/react/24/outline";
 import {useQuery} from "@tanstack/react-query";
@@ -19,7 +20,7 @@ function Home() {
   });
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Spinner />;
   }
   console.log(data);
 

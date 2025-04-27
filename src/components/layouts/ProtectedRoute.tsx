@@ -1,23 +1,22 @@
 "use client";
 
 import {useEffect} from "react";
-import {useRouter} from "next/navigation";
+import {usePathname, useRouter} from "next/navigation";
 
 export function ProtectedRoute({children}: {children: React.ReactNode}) {
   const router = useRouter();
-  // const [loading, setLoading] = useState(true);
+  const pathname = usePathname();
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    console.log("Token:", token); // Tokenni debug qilish
+    console.log("Token:", token);
 
-    if (!token) {
+    // Agar foydalanuvchi login yoki sign-up sahifasida bo'lsa, redirect qilmaymiz
+    if (!token && pathname !== "/login" && pathname !== "/sign-up") {
       console.log("No token found, redirecting to /sign-up");
       router.push("/sign-up");
-    } else {
-      // setLoading(false);
     }
-  }, [router]);
+  }, [router, pathname]);
 
   return <>{children}</>;
 }

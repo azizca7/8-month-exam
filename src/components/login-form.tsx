@@ -39,7 +39,7 @@ export function LoginForm({className, ...props}: React.ComponentProps<"form">) {
         localStorage.setItem("token", data.access);
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
-        alert("Successfully registered!");
+        alert("Successfully login!");
         router.push("/");
       } else {
         alert(data?.message || "Something went wrong");
