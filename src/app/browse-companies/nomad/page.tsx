@@ -1,5 +1,6 @@
 import Footer from "@/components/layouts/Footer";
 import Header from "@/components/layouts/Header";
+import {perksBenefitsData, teamData} from "@/lib/utils";
 import {ArrowRightIcon, FireIcon} from "@heroicons/react/24/outline";
 import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
 
@@ -244,101 +245,30 @@ function NomadPage() {
             </p>
           </div>
           <div className="grid grid-cols-5 gap-4">
-            <div className="p-6 border border-[#D6DDEB] grid justify-items-center rounded-[4px]">
-              <img
-                width={80}
-                height={80}
-                className="bg-red-500 rounded-full"
-                src="./team/1.png"
-                alt=""
-              />
-              <p className="text-[#25324B] font-semibold text-[18px] mt-4">
-                Célestin Gardinier
-              </p>
-              <p className="text-[#7C8493] font-normal text-base mt-1">
-                CEO & Co-Founder
-              </p>
-              <div className="flex items-center gap-3 mt-4">
-                <FaInstagram color="#515B6F" />
-                <FaLinkedin color="#515B6F" />
+            {teamData.map((item) => (
+              <div
+                key={item.title}
+                className="p-6 border border-[#D6DDEB] grid justify-items-center rounded-[4px]"
+              >
+                <img
+                  width={80}
+                  height={80}
+                  className="bg-red-500 rounded-full"
+                  src={item.img}
+                  alt=""
+                />
+                <p className="text-[#25324B] font-semibold text-[18px] mt-4">
+                  {item.name}
+                </p>
+                <p className="text-[#7C8493] font-normal text-base mt-1">
+                  {item.title}
+                </p>
+                <div className="flex items-center gap-3 mt-4">
+                  <FaInstagram color="#515B6F" />
+                  <FaLinkedin color="#515B6F" />
+                </div>
               </div>
-            </div>
-            <div className="p-6 border border-[#D6DDEB] grid justify-items-center rounded-[4px]">
-              <img
-                width={80}
-                height={80}
-                className="bg-red-500 rounded-full"
-                src="./team/3.png"
-                alt=""
-              />
-              <p className="text-[#25324B] font-semibold text-[18px] mt-4">
-                Célestin Gardinier
-              </p>
-              <p className="text-[#7C8493] font-normal text-base mt-1">
-                CEO & Co-Founder
-              </p>
-              <div className="flex items-center gap-3 mt-4">
-                <FaInstagram color="#515B6F" />
-                <FaLinkedin color="#515B6F" />
-              </div>
-            </div>
-            <div className="p-6 border border-[#D6DDEB] grid justify-items-center rounded-[4px]">
-              <img
-                width={80}
-                height={80}
-                className="bg-red-500 rounded-full"
-                src="./team/4.png"
-                alt=""
-              />
-              <p className="text-[#25324B] font-semibold text-[18px] mt-4">
-                Célestin Gardinier
-              </p>
-              <p className="text-[#7C8493] font-normal text-base mt-1">
-                CEO & Co-Founder
-              </p>
-              <div className="flex items-center gap-3 mt-4">
-                <FaInstagram color="#515B6F" />
-                <FaLinkedin color="#515B6F" />
-              </div>
-            </div>
-            <div className="p-6 border border-[#D6DDEB] grid justify-items-center rounded-[4px]">
-              <img
-                width={80}
-                height={80}
-                className="bg-red-500 rounded-full"
-                src="./team/5.png"
-                alt=""
-              />
-              <p className="text-[#25324B] font-semibold text-[18px] mt-4">
-                Célestin Gardinier
-              </p>
-              <p className="text-[#7C8493] font-normal text-base mt-1">
-                CEO & Co-Founder
-              </p>
-              <div className="flex items-center gap-3 mt-4">
-                <FaInstagram color="#515B6F" />
-                <FaLinkedin color="#515B6F" />
-              </div>
-            </div>
-            <div className="p-6 border border-[#D6DDEB] grid justify-items-center rounded-[4px]">
-              <img
-                width={80}
-                height={80}
-                className="bg-red-500 rounded-full"
-                src="./team/6.png"
-                alt=""
-              />
-              <p className="text-[#25324B] font-semibold text-[18px] mt-4">
-                Célestin Gardinier
-              </p>
-              <p className="text-[#7C8493] font-normal text-base mt-1">
-                CEO & Co-Founder
-              </p>
-              <div className="flex items-center gap-3 mt-4">
-                <FaInstagram color="#515B6F" />
-                <FaLinkedin color="#515B6F" />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <hr className="my-[75px] text-[#D6DDEB]" />
@@ -350,24 +280,23 @@ function NomadPage() {
             This job comes with several perks and benefits
           </p>
           <div className="grid grid-cols-4 gap-6 gap-y-6 mt-6">
-            {[1, 2, 3, 4, 5, 6, 7].map((_, indx) => (
-              <div key={indx} className="rounded-[4px]">
-                <img
-                  width={48}
-                  height={48}
-                  className="bg-amber-700"
-                  src="/"
-                  alt=""
-                />
-                <p className="text-[#25324B] font-semibold text-[20px] mt-6 mb-3">
-                  Full Healthcare
-                </p>
-                <p className="text-[#515B6F] text-base mt-3">
-                  We believe in thriving communities and that starts with our
-                  team being happy and healthy.
-                </p>
-              </div>
-            ))}
+            {perksBenefitsData.map((item) => {
+              return (
+                <div key={item.title} className="rounded-[4px]">
+                  <img
+                    width={48}
+                    height={48}
+                    className="bg-amber-700"
+                    src={item.img}
+                    alt=""
+                  />
+                  <p className="text-[#25324B] font-semibold text-[20px] mt-6 mb-3">
+                    {item.title}
+                  </p>
+                  <p className="text-[#515B6F] text-base mt-3">{item.desc}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
