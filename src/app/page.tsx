@@ -99,14 +99,54 @@ function Home() {
             </div>
           </div>
           <div className="grid grid-cols-4 justify-between gap-8 mt-12">
-            <JobsCard />
-            <JobsCard />
-            <JobsCard />
-            <JobsCard />
-            <JobsCard />
-            <JobsCard />
-            <JobsCard />
-            <JobsCard />
+            <JobsCard
+              title="Email Marketing"
+              location="Revolut - Madrid, Spain"
+              img="./jobsImg.png"
+              description="Revolut is looking for Email Marketing to help team ma ..."
+            />
+            <JobsCard
+              title="Brand Designer"
+              location="Dropbox - San Fransisco, US"
+              img="./Dropbox.png"
+              description="Dropbox is looking for Brand Designer to help the team t ..."
+            />
+            <JobsCard
+              title="Email Marketing"
+              location="Pitch - Berlin, Germany"
+              img="./featureJobs/1.png"
+              description="Pitch is looking for Customer Manager to join marketing t ..."
+            />
+            <JobsCard
+              title="Visual Designer"
+              location="Blinklist - Granada, Spain"
+              img="./featureJobs/2.png"
+              description="Blinkist is looking for Visual Designer to help team desi ..."
+            />
+            <JobsCard
+              title="Product Designer"
+              location="ClassPass - Manchester, UK"
+              img="./featureJobs/3.png"
+              description="ClassPass is looking for Product Designer to help us..."
+            />{" "}
+            <JobsCard
+              title="Lead Designer"
+              location="Canva - Ontario, Canada"
+              img="./featureJobs/4.png"
+              description="Canva is looking for Lead Engineer to help develop n ..."
+            />
+            <JobsCard
+              title="Brand Strategist"
+              location="GoDaddy - Marseille, France"
+              img="./featureJobs/5.png"
+              description="GoDaddy is looking for Brand Strategist to join the team..."
+            />{" "}
+            <JobsCard
+              title="Data Analyst"
+              location="Twitter - San Diego, US"
+              img="./featureJobs/6.png"
+              description="Twitter is looking for Data Analyst to help team desi ..."
+            />
           </div>
           <div className="mt-28 flex items-end justify-between">
             <p className="text-[#25324B] text-5xl font-semibold">
@@ -118,14 +158,36 @@ function Home() {
             </div>
           </div>
           <div className="grid grid-cols-2 justify-between gap-8 mt-12">
-            <LatestJobsCard />
-            <LatestJobsCard />
-            <LatestJobsCard />
-            <LatestJobsCard />
-            <LatestJobsCard />
-            <LatestJobsCard />
-            <LatestJobsCard />
-            <LatestJobsCard />
+            <LatestJobsCard
+              img="./featureJobs/1.png"
+              title="Social Media Assistant"
+              location="Nomad - Paris, France"
+            />{" "}
+            <LatestJobsCard
+              img="./featureJobs/2.png"
+              title="Brand Designer"
+              location="Dropbox - San Fransisco, USA"
+            />{" "}
+            <LatestJobsCard
+              img="./featureJobs/3.png"
+              title="Interactive Developer"
+              location="Terraform - Hamburg, Germany"
+            />{" "}
+            <LatestJobsCard
+              img="./featureJobs/4.png"
+              title="HR Manager"
+              location="Packer - Lucern, Switzerland"
+            />
+            <LatestJobsCard
+              img="./featureJobs/5.png"
+              title="Social Media Assistant"
+              location="Netlify - Paris, France"
+            />
+            <LatestJobsCard
+              img="./featureJobs/6.png"
+              title="Brand Designer"
+              location="Maze - San Fransisco, USA"
+            />
           </div>
         </div>
       </div>
