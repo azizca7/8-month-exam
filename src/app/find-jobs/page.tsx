@@ -31,7 +31,7 @@ export default function FindJobsPage() {
     {label: "Contract", count: 3},
   ];
 
-  const {data, isLoading} = useQuery({
+  const {isLoading} = useQuery({
     queryKey: ["jobsCategory"],
     queryFn: () =>
       fetch("https://mustafocoder.pythonanywhere.com/api/jobs/")
