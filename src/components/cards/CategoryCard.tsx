@@ -1,6 +1,11 @@
 import {ArrowRightIcon} from "lucide-react";
 
-function CategoryCard({props}: {props: any}) {
+export interface CategoryCardProps {
+  title: string;
+  user: string;
+}
+
+function CategoryCard({props}: { props: CategoryCardProps }) {
   return (
     <div className="border-[2px] border-[#D6DDEB] p-8 ">
       <img width={48} height={48} src="./cardImage.png" alt="" />

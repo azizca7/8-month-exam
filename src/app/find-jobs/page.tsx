@@ -16,7 +16,6 @@ import {
 } from "@/components/ui/pagination";
 import Header from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
-import {ProtectedRoute} from "@/components/layouts/ProtectedRoute";
 
 export default function FindJobsPage() {
   const [showEmployment, setShowEmployment] = useState(true);

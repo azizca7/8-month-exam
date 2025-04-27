@@ -1,5 +1,5 @@
 "use client";
-import CategoryCard from "@/components/cards/CategoryCard";
+import CategoryCard, {CategoryCardProps} from "@/components/cards/CategoryCard";
 import JobsCard from "@/components/cards/JobsCard";
 import LatestJobsCard from "@/components/cards/LatestJobsCard";
 import Footer from "@/components/layouts/Footer";
@@ -84,8 +84,8 @@ function Home() {
             </div>
           </div>
           <div className="grid grid-cols-4 justify-between gap-8 mt-12">
-            {data.map((item: any) => (
-              <CategoryCard props={item} />
+            {data.map((item: CategoryCardProps) => (
+              <CategoryCard key={item.title} props={item} />
             ))}
           </div>
           <img src="./homeimg.png" className="my-[72px]" alt="" />
