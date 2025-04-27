@@ -1,7 +1,8 @@
 import Footer from "@/components/layouts/Footer";
 import Header from "@/components/layouts/Header";
-import {perksBenefitsData, teamData} from "@/lib/utils";
-import {ArrowRightIcon, FireIcon} from "@heroicons/react/24/outline";
+import {perksBenefitsData, teamData, techStackData} from "@/lib/utils";
+import {ArrowRightIcon, BuildingOfficeIcon, FireIcon, UserGroupIcon} from "@heroicons/react/24/outline";
+import { MapPin } from "lucide-react";
 import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
 
 function NomadPage() {
@@ -28,6 +29,17 @@ function NomadPage() {
                 <FireIcon width={44} height={44} color="#26A4FF" />
                 <div className="w-full">
                   <p className="text-[#515B6F] font-normal text-base">
+                    Founded
+                  </p>
+                  <p className="text-base text-[#25324B] font-semibold">
+                    July 31, 2011
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-x-4 w-full items-center">
+                <UserGroupIcon width={44} height={44} color="#26A4FF" />
+                <div className="w-full">
+                  <p className="text-[#515B6F] font-normal text-base">
                     Employees
                   </p>
                   <p className="text-base text-[#25324B] font-semibold">
@@ -36,18 +48,7 @@ function NomadPage() {
                 </div>
               </div>
               <div className="flex gap-x-4 w-full items-center">
-                <FireIcon width={44} height={44} color="#26A4FF" />
-                <div className="w-full">
-                  <p className="text-[#515B6F] font-normal text-base">
-                    Employees
-                  </p>
-                  <p className="text-base text-[#25324B] font-semibold">
-                    20 countries
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-x-4 w-full items-center">
-                <FireIcon width={44} height={44} color="#26A4FF" />
+                <MapPin width={44} height={44} color="#26A4FF" />
                 <div className="w-full">
                   <p className="text-[#515B6F] font-normal text-base">
                     Location
@@ -58,10 +59,10 @@ function NomadPage() {
                 </div>
               </div>
               <div className="flex gap-x-4 w-full items-center">
-                <FireIcon width={44} height={44} color="#26A4FF" />
+                <BuildingOfficeIcon width={44} height={44} color="#26A4FF" />
                 <div className="w-full">
                   <p className="text-[#515B6F] font-normal text-base">
-                    Founded
+                    Industry
                   </p>
                   <p className="text-base text-[#25324B] font-semibold">
                     Payment Gateway
@@ -132,42 +133,16 @@ function NomadPage() {
               Learn about the technology and tools that Stripe uses.{" "}
             </p>
             <div className="grid mt-7 grid-cols-3 gap-2.5">
-              <div className="grid justify-items-center">
-                <img width={74} height={74} src="./cardImage.png" alt="" />
-                <p className="text-[#25324B] font-normal text-base mt-2.5">
-                  HTML 5
-                </p>
-              </div>
-              <div className="grid justify-items-center">
-                <img width={74} height={74} src="./cardImage.png" alt="" />
-                <p className="text-[#25324B] font-normal text-base mt-2.5">
-                  HTML 5
-                </p>
-              </div>
-              <div className="grid justify-items-center">
-                <img width={74} height={74} src="./cardImage.png" alt="" />
-                <p className="text-[#25324B] font-normal text-base mt-2.5">
-                  HTML 5
-                </p>
-              </div>
-              <div className="grid justify-items-center">
-                <img width={74} height={74} src="./cardImage.png" alt="" />
-                <p className="text-[#25324B] font-normal text-base mt-2.5">
-                  HTML 5
-                </p>
-              </div>
-              <div className="grid justify-items-center">
-                <img width={74} height={74} src="./cardImage.png" alt="" />
-                <p className="text-[#25324B] font-normal text-base mt-2.5">
-                  HTML 5
-                </p>
-              </div>
-              <div className="grid justify-items-center">
-                <img width={74} height={74} src="./cardImage.png" alt="" />
-                <p className="text-[#25324B] font-normal text-base mt-2.5">
-                  HTML 5
-                </p>
-              </div>
+              {techStackData.map((item) => {
+                return (
+                  <div key={item.img} className="grid justify-items-center">
+                    <img width={74} height={74} src={item.img} alt="" />
+                    <p className="text-[#25324B] font-normal text-base mt-2.5">
+                      {item.title}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
             <div className="text-[#4640DE] mt-2 font-semibold text-base flex items-center gap-x-4">
               <p>Show all jobs</p>
@@ -283,13 +258,7 @@ function NomadPage() {
             {perksBenefitsData.map((item) => {
               return (
                 <div key={item.title} className="rounded-[4px]">
-                  <img
-                    width={48}
-                    height={48}
-                    className="bg-amber-700"
-                    src={item.img}
-                    alt=""
-                  />
+                  <img width={48} height={48} src={item.img} alt="" />
                   <p className="text-[#25324B] font-semibold text-[20px] mt-6 mb-3">
                     {item.title}
                   </p>

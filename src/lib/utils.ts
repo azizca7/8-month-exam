@@ -70,3 +70,30 @@ export const teamData = [
     img: "./team/5.png",
   },
 ];
+
+export const techStackData = [
+  {
+    img: "./techStack/1.png",
+    title: "HTML 5",
+  },
+  {
+    img: "./techStack/2.png",
+    title: "CSS 3",
+  },
+  {
+    img: "./techStack/3.png",
+    title: "JavaScript",
+  },
+  {
+    img: "./techStack/4.png",
+    title: "Ruby",
+  },
+  {
+    img: "./techStack/5.png",
+    title: "Mixpanel",
+  },
+  {
+    img: "./techStack/6.png",
+    title: "Framer",
+  },
+];
