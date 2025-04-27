@@ -6,6 +6,7 @@ import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
 import {Label} from "@/components/ui/label";
 import {useRouter} from "next/navigation";
+import Link from "next/link";
 
 export function SignUpForm({className, ...props}: React.ComponentProps<"form">) {
   const [email, setEmail] = useState("");
@@ -124,12 +125,12 @@ export function SignUpForm({className, ...props}: React.ComponentProps<"form">) 
 
       <div className="text-left text-[#202430] font-normal text-base">
         Don&apos;t have an account?{" "}
-        <a
-          href="#"
+        <Link
+          href="/login"
           className="underline text-[#4640DE] font-semibold text-base underline-offset-4"
         >
           Login
-        </a>
+        </Link>
       </div>
     </form>
   );
